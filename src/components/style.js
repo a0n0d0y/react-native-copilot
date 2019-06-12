@@ -21,13 +21,17 @@ export default StyleSheet.create({
     position: 'absolute',
     borderColor: 'transparent',
     borderWidth: ARROW_SIZE,
+    backgroundColor: '#d1ecf6'
   },
   tooltip: {
     position: 'absolute',
     paddingTop: 15,
     paddingHorizontal: 15,
-    backgroundColor: '#fff',
-    borderRadius: 3,
+    paddingBottom: 12,
+    backgroundColor: '#f5f9fa',
+    borderColor: '#d1ecf6',
+    borderWidth: 0.5,
+    borderRadius: 9,
     overflow: 'hidden',
   },
   tooltipText: {
