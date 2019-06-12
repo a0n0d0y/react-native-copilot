@@ -1,6 +1,6 @@
 {
-  "name": "react-native-copilot",
-  "version": "2.4.4",
+  "name": "react-native-copilot-gm",
+  "version": "0.0.1",
   "description": "Make an interactive step by step tour guide for you react-native app",
   "main": "src/index.js",
   "private": false,
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mohebifar/react-native-copilot.git"
+    "url": "git+https://github.com/a0n0d0y/react-native-copilot.git"
   },
   "keywords": [
     "react-native",
@@ -23,12 +23,10 @@
   "files": [
     "src"
   ],
-  "author": "OK GROW! <hello@okgrow.com> (https://www.okgrow.com)",
-  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mohebifar/react-native-copilot/issues"
+    "url": "https://github.com/a0n0d0y/react-native-copilot/issues"
   },
-  "homepage": "https://github.com/mohebifar/react-native-copilot#readme",
+  "homepage": "https://github.com/a0n0d0yr/react-native-copilot#readme",
   "devDependencies": {
     "babel-eslint": "^8.0.1",
     "babel-jest": "^21.2.0",
@@ -63,5 +61,10 @@
   "dependencies": {
     "hoist-non-react-statics": "^3.0.1",
     "mitt": "^1.1.3"
-  }
+  },
+  "directories": {
+    "example": "example"
+  },
+  "author": "Jia Zeng",
+  "license": "ISC"
 }
