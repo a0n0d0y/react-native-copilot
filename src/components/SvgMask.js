@@ -25,13 +25,9 @@ const path = (size, position, canvasSize): string => `M0,0
   H${position.x._value + 18}
   V${position.y._value + 18}
   Z`;
-const windowDimensions = Dimensions.get('window');
-const defaultPath = (size, position, canvasSize): string => `M0,0H${canvasSize.x}V${canvasSize.y}H0V0ZM${position.x._value},${position.y._value}H${position.x._value + size.x._value}V${position.y._value + size.y._value}H${position.x._value}V${position.y._value}Z`;
-const circleSvgPath = ({ position, canvasSize }): string =>
-  `M0,0H${canvasSize.x}V${canvasSize.y}H0V0ZM${position.x._value},${
-    position.y._value
-  }Za50 50 0 1 0 100 0 50 50 0 1 0-100 0`;
 
+const windowDimensions = Dimensions.get('window');
+const defaultSvgPath = ({ size, position, canvasSize }): string => `M0,0H${canvasSize.x}V${canvasSize.y}H0V0ZM${position.x._value},${position.y._value}H${position.x._value + size.x._value}V${position.y._value + size.y._value}H${position.x._value}V${position.y._value}Z`;
 
 type Props = {
   size: valueXY,
