@@ -21,13 +21,9 @@ const path = (size, position, canvasSize): string => `M0,0
   Z
   M${position.x._value + 9 + 9},${position.y._value + 9 + 9}
   H${position.x._value + size.x._value + 18}
-  A9,9 0 0 1 9,9
   V${position.y._value + size.y._value + 18}
-  A9,9 0 0 1 -9,9
   H${position.x._value + 18}
-  A9,9 0 0 1 -9,-9
   V${position.y._value + 18}
-  A9,9 0 0 1 9,-9
   Z`;
 const windowDimensions = Dimensions.get('window');
 // const path = (size, position, canvasSize): string => `M0,0H${canvasSize.x}V${canvasSize.y}H0V0ZM${position.x._value},${position.y._value}H${position.x._value + size.x._value}V${position.y._value + size.y._value}H${position.x._value}V${position.y._value}Z`;
