@@ -19,7 +19,7 @@ const path = (size, position, canvasSize): string => `M0,0
   H0
   V0
   Z
-  M${position.x._value + 9 + 9},${position.y._value + 9 + 9}
+  M${position.x._value - 18},${position.y._value - 18}
   H${position.x._value + size.x._value + 18}
   V${position.y._value + size.y._value + 18}
   H${position.x._value + 18}
