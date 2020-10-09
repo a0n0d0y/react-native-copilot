@@ -40,11 +40,6 @@ const copilot = ({
 } = {}) =>
   (WrappedComponent) => {
     class Copilot extends Component<any, State> {
-      constructor(props) {
-        super(props);
-        this.wrappedComponent = undefined;
-      }
-
       state = {
         steps: {},
         currentStep: null,
@@ -162,6 +157,8 @@ const copilot = ({
         this.eventEmitter.emit('stop');
       }
 
+      setInnerComponent = (innerComponent) => this.innerComponent = innerComponent;
+
       async moveToCurrentStep(): void {
         const size = await this.state.currentStep.target.measure();
 
@@ -182,7 +179,7 @@ const copilot = ({
               currentStep={this.state.currentStep}
               visible={this.state.visible}
               copilotEvents={this.eventEmitter}
-              ref={(ref) => { this.wrappedComponent = ref; }}
+              ref={this.setInnerComponent}
             />
             <CopilotModal
               next={this.next}
